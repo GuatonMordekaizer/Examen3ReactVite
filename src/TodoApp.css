@@ -1,0 +1,159 @@
+/* Estilos personalizados para Todo List */
+
+/* Variables CSS personalizadas */
+:root {
+  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --success-gradient: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  --warning-gradient: linear-gradient(135deg, #ffa726 0%, #ffcc02 100%);
+  --shadow-soft: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Mejoras generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+/* Cursor pointer para elementos interactivos */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Mejoras de botones */
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+.btn-success {
+  background: var(--success-gradient);
+  border: none;
+}
+
+.btn-success:hover {
+  background: var(--success-gradient);
+  filter: brightness(1.1);
+}
+
+/* Mejoras de tarjetas */
+.bg-white {
+  transition: all 0.3s ease;
+}
+
+.bg-white:hover {
+  box-shadow: var(--shadow-hover);
+}
+
+/* Animaciones para elementos de lista */
+.list-group-item {
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.list-group-item:hover {
+  border-left-color: #007bff;
+  background-color: #f8f9fa;
+}
+
+/* Mejoras de checkbox */
+.form-check-input:checked {
+  background: var(--success-gradient);
+  border-color: #38ef7d;
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Animaciones de progreso */
+.progress-bar {
+  transition: width 0.6s ease;
+}
+
+/* Efectos de hover para badges */
+.badge {
+  transition: all 0.3s ease;
+}
+
+/* Mejoras de alertas */
+.alert {
+  border: none;
+  border-radius: 12px;
+}
+
+/* Mejoras del header */
+header {
+  background: var(--primary-gradient) !important;
+  box-shadow: var(--shadow-soft);
+}
+
+/* Mejoras del footer */
+footer {
+  background: #2c3e50 !important;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive mejoras */
+@media (max-width: 768px) {
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .input-group .btn {
+    flex-direction: column;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Animaciones sutiles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.list-group-item {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Mejoras de input */
+.form-control {
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Mejoras de iconos */
+.bi {
+  transition: all 0.3s ease;
+}
+
+/* Efectos de hover para cards */
+.shadow-sm:hover {
+  box-shadow: var(--shadow-hover) !important;
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
